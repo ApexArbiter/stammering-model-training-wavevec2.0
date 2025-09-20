@@ -1,22 +1,51 @@
 file_path,label,label_name,split
-data\non_stammering\M_0388_11y6m_1.mp3,0,non_stammering,train
-data\non_stammering\M_0034_12y11m_1.mp3,0,non_stammering,train
-data\non_stammering\M_0064_11y5m_1.mp3,0,non_stammering,train
-data\non_stammering\M_0103_14y7m_1.mp3,0,non_stammering,train
-data\non_stammering\M_0253_15y0m_1.mp3,0,non_stammering,train
-data\non_stammering\M_0103_12y6m_1.mp3,0,non_stammering,train
-data\non_stammering\M_0017_19y2m_1.mp3,0,non_stammering,train
-data\non_stammering\M_0064_11y2m_1.mp3,0,non_stammering,train
-data\non_stammering\M_0034_13y6m_1.mp3,0,non_stammering,train
-data\non_stammering\M_0104_18y1m_1.mp3,0,non_stammering,train
-data\non_stammering\M_0014_11y7m_1.mp3,0,non_stammering,train
-data\non_stammering\M_0064_11y11m_1.mp3,0,non_stammering,train
-data\non_stammering\M_0025_11y10m_2.mp3,0,non_stammering,train
-data\non_stammering\M_0253_14y8m_1.mp3,0,non_stammering,train
-data\non_stammering\M_0048_11y7m_1.mp3,0,non_stammering,val
-data\non_stammering\M_0064_11y3m_1.mp3,0,non_stammering,val
-data\non_stammering\M_0034_12y8m_1 (1).mp3,0,non_stammering,val
-data\non_stammering\M_0070_9y9m_1.mp3,0,non_stammering,test
-data\non_stammering\M_0053_11y4m_1.mp3,0,non_stammering,test
-data\non_stammering\M_0253_15y3m_1.mp3,0,non_stammering,test
-data\non_stammering\M_0103_14y1m_1.mp3,0,non_stammering,test
+data/non_stammering/M_0017_19y2m_1.mp3,0,non_stammering,train
+data/stammering/Asking for help with a stutter #stuttering #slp #teacher - Travis Stuttering (youtube)-[AudioTrimmer.com] (2).mp3,1,stammering,train
+"data/stammering/Stuttering For Kids, By Kids 2.0 - The Stuttering Foundation (youtube)-[AudioTrimmer.com] (2).mp3",1,stammering,train
+data/non_stammering/M_0104_18y1m_1.mp3,0,non_stammering,train
+data/stammering/Adam_s story on stammering - Therapy - County Durham & Darlington NHS Foundation Trust (youtube)-[AudioTrimmer.com].mp3,1,stammering,train
+"data/stammering/Stuttering For Kids, By Kids 2.0 - The Stuttering Foundation (youtube)-[AudioTrimmer.com].mp3",1,stammering,train
+data/non_stammering/M_0064_11y2m_1.mp3,0,non_stammering,train
+"data/stammering/Stuttering For Kids, By Kids 2.0 - The Stuttering Foundation (youtube)-[AudioTrimmer.com] (7).mp3",1,stammering,train
+data/non_stammering/M_0034_12y8m_1 (1).mp3,0,non_stammering,train
+data/stammering/Kids Talk About Stuttering - The Stuttering Foundation (youtube)-[AudioTrimmer.com].mp3,1,stammering,train
+"data/stammering/Stuttering For Kids, By Kids 2.0 - The Stuttering Foundation (youtube)-[AudioTrimmer.com] (10).mp3",1,stammering,train
+"data/stammering/Stuttering For Kids, By Kids 2.0 - The Stuttering Foundation (youtube)-[AudioTrimmer.com] (5).mp3",1,stammering,train
+data/non_stammering/M_0103_12y6m_1.mp3,0,non_stammering,train
+"data/stammering/Stuttering For Kids, By Kids 2.0 - The Stuttering Foundation (youtube)-[AudioTrimmer.com] (1).mp3",1,stammering,train
+data/non_stammering/M_0253_15y3m_1.mp3,0,non_stammering,train
+data/stammering/My Stammering Child - Humber Teaching NHS Foundation Trust (youtube)-[AudioTrimmer.com].mp3,1,stammering,train
+data/stammering/Kids Talk About Stuttering - The Stuttering Foundation (youtube)-[AudioTrimmer.com] (2).mp3,1,stammering,train
+"data/stammering/Stuttering For Kids, By Kids 2.0 - The Stuttering Foundation (youtube)-[AudioTrimmer.com] (4).mp3",1,stammering,train
+data/stammering/For Parents of a Child Who Stutters Causes of Concern - The Stuttering Foundation (youtube)-[AudioTrimmer.com].mp3,1,stammering,train
+data/stammering/For Parents of a Child Who Stutters Causes of Concern - The Stuttering Foundation (youtube)-[AudioTrimmer.com] (2).mp3,1,stammering,train
+data/non_stammering/M_0253_14y8m_1.mp3,0,non_stammering,train
+data/stammering/Asking for help with a stutter #stuttering #slp #teacher - Travis Stuttering (youtube)-[AudioTrimmer.com].mp3,1,stammering,train
+data/non_stammering/M_0034_13y6m_1.mp3,0,non_stammering,train
+data/non_stammering/M_0103_14y1m_1.mp3,0,non_stammering,train
+"data/stammering/Stuttering For Kids, By Kids 2.0 - The Stuttering Foundation (youtube)-[AudioTrimmer.com] (11).mp3",1,stammering,train
+data/non_stammering/M_0025_11y10m_2.mp3,0,non_stammering,train
+data/non_stammering/M_0103_14y7m_1.mp3,0,non_stammering,train
+data/non_stammering/M_0053_11y4m_1.mp3,0,non_stammering,train
+"data/stammering/Stuttering For Kids, By Kids 2.0 - The Stuttering Foundation (youtube)-[AudioTrimmer.com] (9).mp3",1,stammering,train
+data/non_stammering/M_0388_11y6m_1.mp3,0,non_stammering,train
+data/stammering/From Struggling with a Stutter to Finding Love!  STEVE HARVEY - Steve TV Show (youtube)-[AudioTrimmer.com].mp3,1,stammering,train
+data/stammering/For Parents of a Child Who Stutters Causes of Concern - The Stuttering Foundation (youtube)-[AudioTrimmer.com] (1).mp3,1,stammering,train
+data/non_stammering/M_0064_11y3m_1.mp3,0,non_stammering,train
+data/stammering/Kids Talk About Stuttering - The Stuttering Foundation (youtube)-[AudioTrimmer.com] (1).mp3,1,stammering,train
+data/non_stammering/M_0048_11y7m_1.mp3,0,non_stammering,train
+data/non_stammering/M_0253_15y0m_1.mp3,0,non_stammering,val
+data/stammering/Kids Talk About Stuttering - The Stuttering Foundation (youtube)-[AudioTrimmer.com] (4).mp3,1,stammering,val
+data/stammering/My Stammering Child - Humber Teaching NHS Foundation Trust (youtube)-[AudioTrimmer.com] (1).mp3,1,stammering,val
+data/non_stammering/M_0014_11y7m_1.mp3,0,non_stammering,val
+"data/stammering/Stuttering For Kids, By Kids 2.0 - The Stuttering Foundation (youtube)-[AudioTrimmer.com] (3).mp3",1,stammering,val
+data/stammering/Kids Talk About Stuttering - The Stuttering Foundation (youtube)-[AudioTrimmer.com] (3).mp3,1,stammering,val
+data/non_stammering/M_0064_11y11m_1.mp3,0,non_stammering,val
+"data/stammering/Stuttering For Kids, By Kids 2.0 - The Stuttering Foundation (youtube)-[AudioTrimmer.com] (8).mp3",1,stammering,test
+data/non_stammering/M_0034_12y11m_1.mp3,0,non_stammering,test
+"data/stammering/Stuttering For Kids, By Kids 2.0 - The Stuttering Foundation (youtube)-[AudioTrimmer.com] (6).mp3",1,stammering,test
+data/stammering/Asking for help with a stutter #stuttering #slp #teacher - Travis Stuttering (youtube)-[AudioTrimmer.com] (1).mp3,1,stammering,test
+data/non_stammering/M_0064_11y5m_1.mp3,0,non_stammering,test
+data/stammering/From Struggling with a Stutter to Finding Love!  STEVE HARVEY - Steve TV Show (youtube)-[AudioTrimmer.com] (1).mp3,1,stammering,test
+data/stammering/My Stammering Child - Humber Teaching NHS Foundation Trust (youtube)-[AudioTrimmer.com] (2).mp3,1,stammering,test
+data/non_stammering/M_0070_9y9m_1.mp3,0,non_stammering,test

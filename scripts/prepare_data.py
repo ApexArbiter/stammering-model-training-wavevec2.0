@@ -1,7 +1,5 @@
 import os
 import pandas as pd
-import librosa
-import numpy as np
 from sklearn.model_selection import train_test_split
 from pathlib import Path
 
@@ -11,7 +9,7 @@ def create_dataset_csv():
     """
     data = []
 
-    # Check if the directories exist and contain files
+    # Directories
     stammer_dir = Path("data/stammering")
     normal_dir = Path("data/non_stammering")
 
@@ -20,63 +18,62 @@ def create_dataset_csv():
     if not normal_dir.exists():
         raise FileNotFoundError(f"Directory {normal_dir} does not exist.")
 
-    print(f"Found {len(list(stammer_dir.glob('*.wav')))} stammering files.")
-    print(f"Found {len(list(normal_dir.glob('*.wav')))} non-stammering .wav files.")
-    print(f"Found {len(list(normal_dir.glob('*.mp3')))} non-stammering .mp3 files.")
+    # --- Count files ---
+    stammer_wav = list(stammer_dir.glob("*.wav"))
+    stammer_mp3 = list(stammer_dir.glob("*.mp3"))
+    normal_wav = list(normal_dir.glob("*.wav"))
+    normal_mp3 = list(normal_dir.glob("*.mp3"))
 
-    # Process stammering files
-    for audio_file in stammer_dir.glob("*.wav"):
-        print(f"Processing stammering file: {audio_file}")  # Debug print
+    print(f"Found {len(stammer_wav)} stammering .wav files.")
+    print(f"Found {len(stammer_mp3)} stammering .mp3 files.")
+    print(f"Found {len(normal_wav)} non-stammering .wav files.")
+    print(f"Found {len(normal_mp3)} non-stammering .mp3 files.")
+
+    # --- Process stammering files ---
+    for audio_file in stammer_wav + stammer_mp3:
+        print(f"Processing stammering file: {audio_file}")
         data.append({
             'file_path': str(audio_file),
-            'label': 1,  # 1 for stammering
+            'label': 1,
             'label_name': 'stammering'
         })
 
-    # Process non-stammering files (both .mp3 and .wav)
-    for audio_file in normal_dir.glob("*.wav"):
-        print(f"Processing non-stammering .wav file: {audio_file}")  # Debug print
+    # --- Process non-stammering files ---
+    for audio_file in normal_wav + normal_mp3:
+        print(f"Processing non-stammering file: {audio_file}")
         data.append({
             'file_path': str(audio_file),
-            'label': 0,  # 0 for non-stammering
-            'label_name': 'non_stammering'
-        })
-    for audio_file in normal_dir.glob("*.mp3"):
-        print(f"Processing non-stammering .mp3 file: {audio_file}")  # Debug print
-        data.append({
-            'file_path': str(audio_file),
-            'label': 0,  # 0 for non-stammering
+            'label': 0,
             'label_name': 'non_stammering'
         })
 
-    # Check if no data was found
     if not data:
         raise ValueError("No audio files found in 'stammering' or 'non_stammering' directories.")
 
-    # Create DataFrame
+    # --- Create DataFrame ---
     df = pd.DataFrame(data)
-
-    # Check if the 'label' column exists
-    if 'label' not in df.columns:
-        raise KeyError("The 'label' column is missing!")
-
     print(f"DataFrame created with {len(df)} samples.")
     print(f"First few rows:\n{df.head()}")
 
-    # Split into train/validation/test (70/15/15)
-    train_df, temp_df = train_test_split(df, test_size=0.3, random_state=42, stratify=df['label'])
-    val_df, test_df = train_test_split(temp_df, test_size=0.5, random_state=42, stratify=temp_df['label'])
+    # --- Split into train/val/test ---
+    train_df, temp_df = train_test_split(
+        df, test_size=0.3, random_state=42, stratify=df['label']
+    )
+    val_df, test_df = train_test_split(
+        temp_df, test_size=0.5, random_state=42, stratify=temp_df['label']
+    )
 
     # Add split column
     train_df['split'] = 'train'
     val_df['split'] = 'val'
     test_df['split'] = 'test'
 
-    # Combine and save
+    # Combine & save
     final_df = pd.concat([train_df, val_df, test_df], ignore_index=True)
     final_df.to_csv('data/dataset.csv', index=False)
 
-    print(f"Dataset created:")
+    # --- Summary ---
+    print(f"\nDataset created:")
     print(f"Train: {len(train_df)} samples")
     print(f"Validation: {len(val_df)} samples")
     print(f"Test: {len(test_df)} samples")
@@ -91,5 +88,5 @@ if __name__ == "__main__":
     os.makedirs("models", exist_ok=True)
     os.makedirs("results", exist_ok=True)
     
-    # Create dataset CSV
+    # Generate dataset
     df = create_dataset_csv()
