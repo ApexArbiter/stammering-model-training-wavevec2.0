@@ -4,7 +4,7 @@ env/
 .stammering_env/
 stammering_env/
 
-.pth
+*.pth
 # Ignore Python cache
 __pycache__/
 *.pyc
