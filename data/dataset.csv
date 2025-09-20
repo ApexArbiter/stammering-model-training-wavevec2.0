@@ -1,0 +1,22 @@
+file_path,label,label_name,split
+data\non_stammering\M_0388_11y6m_1.mp3,0,non_stammering,train
+data\non_stammering\M_0034_12y11m_1.mp3,0,non_stammering,train
+data\non_stammering\M_0064_11y5m_1.mp3,0,non_stammering,train
+data\non_stammering\M_0103_14y7m_1.mp3,0,non_stammering,train
+data\non_stammering\M_0253_15y0m_1.mp3,0,non_stammering,train
+data\non_stammering\M_0103_12y6m_1.mp3,0,non_stammering,train
+data\non_stammering\M_0017_19y2m_1.mp3,0,non_stammering,train
+data\non_stammering\M_0064_11y2m_1.mp3,0,non_stammering,train
+data\non_stammering\M_0034_13y6m_1.mp3,0,non_stammering,train
+data\non_stammering\M_0104_18y1m_1.mp3,0,non_stammering,train
+data\non_stammering\M_0014_11y7m_1.mp3,0,non_stammering,train
+data\non_stammering\M_0064_11y11m_1.mp3,0,non_stammering,train
+data\non_stammering\M_0025_11y10m_2.mp3,0,non_stammering,train
+data\non_stammering\M_0253_14y8m_1.mp3,0,non_stammering,train
+data\non_stammering\M_0048_11y7m_1.mp3,0,non_stammering,val
+data\non_stammering\M_0064_11y3m_1.mp3,0,non_stammering,val
+data\non_stammering\M_0034_12y8m_1 (1).mp3,0,non_stammering,val
+data\non_stammering\M_0070_9y9m_1.mp3,0,non_stammering,test
+data\non_stammering\M_0053_11y4m_1.mp3,0,non_stammering,test
+data\non_stammering\M_0253_15y3m_1.mp3,0,non_stammering,test
+data\non_stammering\M_0103_14y1m_1.mp3,0,non_stammering,test
